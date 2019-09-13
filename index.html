@@ -40,7 +40,7 @@
 
   <main>
     <section>
-      <h2>Полулярные категории</h2>
+      <h2 class="visually-hidden">Полулярные категории</h2>
       <ul>
         <li>
           <h3>Материалы</h3>
@@ -58,8 +58,7 @@
     </section>
 
     <section>
-      <h2>Популярный ручной инструмет</h2>
-      <!--Слайдер-->
+      <h2 class="visually-hidden">Популярный ручной инструмет</h2>
       <ul>
         <li>
           <img src="img/slider1.jpg" alt="Дрели" width="620" height="266">
@@ -81,7 +80,7 @@
     </section>
 
     <section>
-      <h2>Полулярные услуги</h2>
+      <h2 class="visually-hidden">Полулярные услуги</h2>
       <ul>
         <li>
           <h3>Скидки 50%</h3>
@@ -233,7 +232,7 @@
     </section>
 
     <section>
-      <h2>О компании</h2>
+      <h2 class="visually-hidden">О компании</h2>
       <h3>КОМПАНИЯ «Техномарт»</h3>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
         равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -283,12 +282,11 @@
       <p>© 2010–2019 Компания «Техномарт»
         Все права защищены</p>
       <div>
-        <p><a href="#">Вконтакте</a></p>
-        <p><a href="#">Фейсбук</a></p>
-        <p><a href="#">Инстаграм</a></p>
+        <p><a href="#" class="visually-hidden">Вконтакте</a></p>
+        <p><a href="#" class="visually-hidden">Фейсбук</a></p>
+        <p><a href="#" class="visually-hidden">Инстаграм</a></p>
       </div>
       <ul>
-        <!-- стоит ли этот блок списком размечать? или параграфу лучше-->
         <li><a href="mailto:mail@htmlacademy.ru">Обратная связь:
             mail@htmlacademy.ru</a></li>
         <li><a href="https://htmlacademy.ru/intensive/htmlcss">Разработано —
@@ -296,6 +294,19 @@
       </ul>
     </section>
   </footer>
+  <form method="POST" action="https://echo.htmlacademy.ru">
+    <!--class="visually-hidden" форма обратной связи-->
+    <fieldset>
+      <legend class="visually-hidden">Напишите нам</legend>
+      <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия">
+      <label for="modal-name">Ваше имя:</label>
+      <input type="email" name="email" id="modal-email" placeholder="email@example.com">
+      <label for="modal-email">Ваш e-mail:</label>
+      <textarea name="message" id="modal-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      <label for="modal-message">Текст письма:</label>
+    </fieldset>
+    <button type="submit">Отправить</button>
+  </form>
 </body>
 
 </html>
