@@ -1,3 +1,491 @@
+/* глобальный стили */
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------------------header------------------ */
 .main-logo {
   background-color: #ee3643;
+}
+
+.main-logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-logo:active {
+  background-color: #ba2732;
+}
+
+.header {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.top-line {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+  list-style: none;
+}
+
+.top-line a {
+  font-family: "Cuprum";
+  color: #ffffff;
+}
+.order a {
+  background-color: #63a63e;
+}
+
+.order a:hover {
+  background-color: #5fbb2d;
+}
+
+.order a:active {
+  background-color: #518534;
+}
+.bookmarks a:hover,
+.basket a:hover,
+.search a:hover {
+  background-color: #212a3a;
+}
+
+.bookmarks a:active,
+.basket a:active,
+.order a:active {
+  color: rgba(225, 225, 225, 0.6);
+}
+
+.search a:focus {
+  color:#000000;
+  background-color:#ffffff}
+
+.main-desc {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.phonenumber {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.nav-addres {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.nav-lk {
+  list-style: none;
+}
+
+.nav-lk a{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+ }
+
+.nav-lk a:hover{
+  color: #ee3643;
+}
+
+.nav-lk a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav {
+  background-color: #32425c;
+}
+
+.main-nav-list{
+  list-style: none;
+}
+
+.main-nav-list a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-nav-list a:hover {
+ background-color: #293449;
+}
+.main-nav-list a:active {
+ color:rgba(255, 255, 255, 0.5);
+ background-color: #1d2739;
+}
+
+.nav-wrapper {
+  background-color: #f3f6f8;
+}
+
+/* --------------------- main ------------------ */
+.popular-sections,
+.pop-services {
+  font-family: "Cuprum";
+}
+
+.btn {
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.btn:hover {
+background-color: #ca2c37;
+}
+
+.btn:active {
+background-color: #ba2732;
+}
+/* не поняла правильно взяла цвет этих кнопок (section)?? */
+.btn-section {
+  background-color: rgba(229, 229, 229, 0.1);
+}
+.btn-section:hover {
+  background-color: rgba(229, 229, 229, 0.2);
+}
+.btn-section:active {
+  background-color: rgba(229, 229, 229, 0.3);
+}
+
+.sections-list,
+.pop-services-list{
+  list-style: none;
+}
+
+.sections-list h3,
+.pop-services-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  list-style: none;
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.tools {
+  background-color: #3bbce3;
+}
+
+.tech {
+  background-color: #dc91d8;
+}
+
+.discounts {
+  background-color: #8ed78f;
+}
+
+.popular-delivery {
+  background-color: #ffc047;
+}
+
+/* ----------------slider------------------ */
+.slider-list {
+  font-family: "Cuprum";
+  list-style: none;
+  color: #32133f;  /*временно  - потом заменить на #ffffff*/
+}
+
+.slider-desc{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.slider-text{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/*----------------популярные товары---------------- */
+.popular-items-head-wrapper,
+.popular-supliers-head-wrapper {
+  background-color: #f9f5f0;
+}
+
+.popular-items-head,
+.popular-supliers-head  {
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+  color:#32425c;
+  text-transform: uppercase;
+}
+
+/*----------- карточка товара ------------*/
+.items-list {
+  list-style: none;
+}
+
+.item-card {
+border: 1px solid #e5e5e5;
+}
+
+.item-header {
+  font-size: 18px;
+  line-height: 20px;
+
+}
+
+.item-header a {
+  color: #000000;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.current-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.btn-cart {
+  background-color: #63a63e;
+}
+
+.btn-cart:focus,
+.btn-cart:hover {
+  background-color: #5fbb2d;
+}
+
+.btn-cart:active {
+  background-color: #518534;
+}
+
+.btn-bookmark {
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+  border-radius: 2px;
+}
+
+.btn-bookmark:focus,
+.btn-bookmark:hover {
+  color: #32425c;
+  background-color: #ffffff;
+  border: 3px solid #32425c;
+}
+
+.btn-bookmark:active {
+ opacity: 0.3;
+}
+
+/* --------------производители------------ */
+.supliers-list {
+  list-style: none;
+}
+
+.suplier-card {
+  border: 1px solid #e5e5e5;
+  }
+
+  .suplier-card:focus,
+  .suplier-card:hover{
+    border: none;
+    box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+  }
+
+  .suplier-card:active{
+    opacity: 0.3;
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+  }
+
+/* -------------сервисы---------------- */
+.services {
+  background-color: #f9f5f0;
+}
+
+.services h2 {
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color:#000000;
+  text-transform: uppercase;
+}
+
+.services h3 {
+  font-family: "Cuprum";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color:#32425c;
+  text-transform: uppercase;
+}
+
+.services-list {
+  list-style: none;
+}
+.services-list a {
+  font-family: "Cuprum";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color:#ffffff;
+  background-color: #32425c;
+ }
+.services-list a:hover {
+ color:#ffffff;
+ background-color: #293449;
+ }
+
+ /* Каким псевдо классом прописать состояние активности для этого слайдера? active */
+ .services-list a:active {
+  color:#32425c;
+  background-color: #ffffff;
+  }
+
+/* ---------раздел о компании (внизу страницы)--------- */
+/* ---------раздел о компании (внизу страницы)--------- */
+.about h3 {
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color:#000000;
+  text-transform: uppercase;
+}
+
+.delivery-comp {
+list-style: none;
+}
+
+.delivery-comp a {
+  font-family: "Cuprum";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color:#000000;
+}
+/* ---------раздел о контакты (внизу страницы)--------- */
+.contacts h2 {
+  font-family: "Cuprum";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color:#000000;
+  text-transform: uppercase;
+}
+
+/* ----------footer ----------- */
+.footer {
+  font-family: "Cuprum";
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.footer-adress,
+.footer-adress a {
+  font-family: "Cuprum";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#ffffff;
+}
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-nav-list a{
+  font-family: "Cuprum";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#ffffff;
+}
+
+.footer-catalog {
+  list-style: none;
+}
+.footer-catalog a{
+  font-family: "Cuprum";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#ffd180;
+}
+
+.footer-nav-list a:hover,
+.footer-catalog a:hover{
+  text-decoration: underline;
+}
+
+.footer-nav-list a:active,
+.footer-catalog a:active{
+  opacity: 0.5;
+}
+
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback {
+  list-style: none;
+}
+.feedback a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color:#ffffff;
+}
+.feedback span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color:#ffd180;
+}
+
+.feedback span:hover {
+  text-decoration: underline;
+}
+
+.feedback span:active {
+  text-decoration: none;
+  color: #ee3643;
 }
