@@ -50,37 +50,44 @@ a {
   color: #ffffff;
 
   background-color: #293449;
-  list-style: none;
-}
+ }
 
 .top-line a {
   font-family: "Cuprum";
   color: #ffffff;
 }
-.order a {
+.order {
   background-color: #63a63e;
 }
 
-.order a:hover {
+.order:hover {
   background-color: #5fbb2d;
 }
 
-.order a:active {
+.order:active {
   background-color: #518534;
 }
-.bookmarks a:hover,
-.basket a:hover,
-.search a:hover {
+.bookmarks:hover,
+.basket:hover,
+.search:hover {
   background-color: #212a3a;
 }
 
-.bookmarks a:active,
-.basket a:active,
-.order a:active {
+.bookmarks:active,
+.basket:active,
+.order:active {
   color: rgba(225, 225, 225, 0.6);
 }
 
-.search a:focus {
+.search {
+  border: none;
+  background-color: #293449;
+}
+
+.search::placeholder {
+  color: #ffffff;
+}
+.search:focus {
   color:#000000;
   background-color:#ffffff}
 
@@ -107,7 +114,8 @@ a {
   list-style: none;
 }
 
-.nav-lk a{
+.nav-lk a,
+.personal-area{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -115,13 +123,28 @@ a {
   background-color: #ffffff;
  }
 
-.nav-lk a:hover{
-  color: #ee3643;
+.nav-lk a:hover,
+.personal-area-nav a:hover{
+  color:#ee3643;
 }
 
-.nav-lk a:active{
+/* .personal-area:hover{ тут будут стили для псевдо элементов }*/
+
+.nav-lk a:active,
+.personal-area:active,
+.personal-area-nav a:active{
   color: rgba(0, 0, 0, 0.3);
 }
+
+.personal-area-nav{
+list-style: none;
+color: #32425c;
+text-decoration: underline;
+}
+
+.personal-area-nav a{
+  color: #32425c;
+ }
 
 .main-nav {
   background-color: #32425c;
@@ -181,6 +204,16 @@ background-color: #ba2732;
 .btn-section:active {
   background-color: rgba(229, 229, 229, 0.3);
 }
+/* ------------breadcrumbs---------  */
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a{
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
 
 .sections-list,
 .pop-services-list{
@@ -214,6 +247,69 @@ background-color: #ba2732;
 .popular-delivery {
   background-color: #ffc047;
 }
+/*------------- страница каталога------- */
+/* формы */
+.top-sort {
+  background-color: #f7f3ec;
+}
+
+.top-sort-list,
+.top-sort h3,
+.filter {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.top-sort-list a {
+color: rgba(0, 0, 0, 0.3);
+border-bottom: 1px dotted #ee3643;
+}
+
+.top-sort-list a:hover {
+color: rgba(0, 0, 0, 1);
+border-bottom: 1px solid #ee3643;
+}
+/* я так понимаю, индикатор активности нужно как то по другому обозначать?? */
+.top-sort-list a:active {
+color: #ee3643;
+border-bottom: none;
+}
+
+.side-sort {
+  border: none;
+}
+
+.form-header {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+.manufacturer-sort,
+.source-sort {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.btn-form-sort { /* как <button> стилизовать? рамки не применяются, делать интут type submit? */
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid e5e5e5;
+  border-radius: 2px;
+}
 
 /* ----------------slider------------------ */
 .slider-list {
@@ -242,7 +338,8 @@ background-color: #ba2732;
 }
 
 .popular-items-head,
-.popular-supliers-head  {
+.popular-supliers-head,
+.catalog-header  {
   font-family: "Cuprum";
   font-size: 30px;
   line-height: 30px;
@@ -272,7 +369,6 @@ border: 1px solid #e5e5e5;
 .old-price {
   font-size: 17px;
   line-height: 18px;
-  text-decoration: line-through;
   color: #a9a9a9;
 }
 
@@ -311,6 +407,36 @@ border: 1px solid #e5e5e5;
 
 .btn-bookmark:active {
  opacity: 0.3;
+}
+
+/* -----------пагинация------------- */
+.pagination {
+  list-style: none;
+}
+
+.pagination a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.pagination a:hover,
+.current-pagination a:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #bdc6ca;
+}
+
+.pagination a:active {
+  border: 1px solid #ee3643;
+}
+
+.current-pagination a {
+  color:#ffffff;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
 }
 
 /* --------------производители------------ */
@@ -401,7 +527,29 @@ list-style: none;
   line-height: 20px;
   color:#000000;
 }
-/* ---------раздел о контакты (внизу страницы)--------- */
+
+/* текст про перфораторы внизу страницы каталога */
+.drils-about {
+background-color: #f2f6f8;
+}
+.drils-about h3 {
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color:#000000;
+  text-transform: uppercase;
+}
+
+.drils-about p {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color:#000000;
+ }
+
+
+/* ---------раздел контакты (внизу страницы)--------- */
 .contacts h2 {
   font-family: "Cuprum";
   font-size: 30px;
