@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic"
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -15,12 +16,13 @@
     <a>
       <img src="img/mainLogo.svg" alt="Логотип Техномарт" width="109" height="19" class="main-logo">
     </a>
-    <ul class="top-line">
-      <li class="search"><a href="#">Поиск</a></li>
-      <li class="bookmarks"><a href="#">Закладки: 0</a></li>
-      <li class="basket"><a href="#">Корзина: 0</a></li>
-      <li class="order"><a href="#">Оформить заказ</a></li>
-    </ul>
+    <div class="top-line">
+      <label aria-label="Поиск" for="search"></label><input type="search" placeholder="Поиск:" class="search"
+        id="search">
+      <a href="#" class="bookmarks">Закладки: 0</a>
+      <a href="#" class="basket">Корзина: 0</a>
+      <a href="#" class="order">Оформить заказ</a>
+    </div>
     <div class="nav-wrapper">
       <h1 class="main-desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <a href="tel:+78125550555" class="phonenumber">+7(812)555-05-55</a>
@@ -115,7 +117,7 @@
           <p>
             <img src="img/perforator_1.jpg" alt="Перфоратор Bosh BGF 9000" width="218" height="170">
           </p>
-          <p class="old-price">32500 P.</p>
+          <del class="old-price">32500 P.</del>
           <p class="current-price">25500 P.</p>
           <a href="#" class="btn btn-cart">Купить</a>
           <a href="#" class="btn btn-bookmark">В закладки</a>
@@ -130,7 +132,7 @@
           <p>
             <img src="img/perforator_2.jpg" alt="Перфоратор Bosh BGF 3000" width="218" height="170">
           </p>
-          <p class="old-price">22500 P.</p>
+          <del class="old-price">22500 P.</del>
           <p class="current-price">15500 P.</p>
           <a href="#" class="btn btn-cart">Купить</a>
           <a href="#" class="btn btn-bookmark">В закладки</a>
@@ -145,7 +147,7 @@
           <p>
             <img src="img/perforator_3.jpg" alt="Перфоратор Bosh BGF 6000" width="218" height="170">
           </p>
-          <p class="old-price">30500 P.</p>
+          <del class="old-price">30500 P.</del>
           <p class="current-price">25500 P.</p>
           <a href="#" class="btn btn-cart">Купить</a>
           <a href="#" class="btn btn-bookmark">В закладки</a>
