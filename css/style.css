@@ -196,13 +196,13 @@ background-color: #ba2732;
 }
 /* не поняла правильно взяла цвет этих кнопок (section)?? */
 .btn-section {
-  background-color: rgba(229, 229, 229, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .btn-section:hover {
-  background-color: rgba(229, 229, 229, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .btn-section:active {
-  background-color: rgba(229, 229, 229, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 /* ------------breadcrumbs---------  */
 .breadcrumbs {
