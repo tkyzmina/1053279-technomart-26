@@ -28,6 +28,12 @@ a {
 }
 
 /* ---------------------------header------------------ */
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .main-logo {
   background-color: #ee3643;
 }
@@ -42,14 +48,25 @@ a {
 
 .header {
   font-family: "Cuprum", Arial, sans-serif;
-}
+  }
+
+  .top-line-wrapper {
+  width: 100%;
+  background-color: #293449;
+  }
 
 .top-line {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+ }
 
-  background-color: #293449;
+ .top-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
  }
 
 .top-line a {
@@ -92,10 +109,13 @@ a {
   background-color:#ffffff}
 
 .main-desc {
+  margin: 0;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
+  width: 200px;
+
 }
 
 .phonenumber {
@@ -112,6 +132,10 @@ a {
 
 .nav-lk {
   list-style: none;
+  width: 281px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
 }
 
 .nav-lk a,
@@ -148,10 +172,15 @@ text-decoration: underline;
 
 .main-nav {
   background-color: #32425c;
+
 }
 
 .main-nav-list{
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin:0;
+  padding: 0;
 }
 
 .main-nav-list a {
@@ -169,9 +198,19 @@ text-decoration: underline;
 }
 
 .nav-wrapper {
+  width: 100%;
   background-color: #f3f6f8;
+  }
+
+.nav-contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
 }
 
+.middle-nav-wrapper {
+  display: flex;
+}
 /* --------------------- main ------------------ */
 .popular-sections,
 .pop-services {
@@ -194,7 +233,7 @@ background-color: #ca2c37;
 .btn:active {
 background-color: #ba2732;
 }
-/* не поняла правильно взяла цвет этих кнопок (section)?? */
+
 .btn-section {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -217,7 +256,42 @@ background-color: #ba2732;
 
 .sections-list,
 .pop-services-list{
+  margin: 0;
+  padding: 0;
   list-style: none;
+  margin-bottom: 20px;
+}
+
+.sections-list li {
+  width: 300px;
+}
+
+
+.sections-list {
+  display: flex;
+  justify-content: space-between;
+}
+.pop-services-list {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.pop-services-list li{
+  margin-bottom: 20px;
+}
+
+.pop-services {
+  order: 1;
+}
+
+.slider {
+  order: -1;
+}
+
+.slide-services-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sections-list h3,
@@ -313,6 +387,8 @@ border-bottom: none;
 
 /* ----------------slider------------------ */
 .slider-list {
+  margin: 0;
+  padding: 0;
   font-family: "Cuprum";
   list-style: none;
   color: #32133f;  /*временно  - потом заменить на #ffffff*/
@@ -334,7 +410,10 @@ border-bottom: none;
 /*----------------популярные товары---------------- */
 .popular-items-head-wrapper,
 .popular-supliers-head-wrapper {
+  height: 89px;
   background-color: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .popular-items-head,
@@ -347,13 +426,22 @@ border-bottom: none;
   text-transform: uppercase;
 }
 
+.wrapper-pop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /*----------- карточка товара ------------*/
 .items-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .item-card {
 border: 1px solid #e5e5e5;
+width: 220px;
 }
 
 .item-header {
@@ -442,9 +530,13 @@ border: 1px solid #e5e5e5;
 /* --------------производители------------ */
 .supliers-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .suplier-card {
+  width: 220px;
+  height: 145px;
   border: 1px solid #e5e5e5;
   }
 
@@ -459,10 +551,19 @@ border: 1px solid #e5e5e5;
     border: none;
     box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
   }
+.popular-supliers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 /* -------------сервисы---------------- */
 .services {
   background-color: #f9f5f0;
+}
+
+.servises-descr {
+width: 400px;
 }
 
 .services h2 {
@@ -499,6 +600,27 @@ border: 1px solid #e5e5e5;
  background-color: #293449;
  }
 
+ .services-slider-list{
+   width: 620px;
+   margin: 0;
+ }
+ .services-slider-list p,
+ .services-slider-list h3 {
+  margin: 0;
+  padding: 0;
+ }
+
+ .services-slider-list-hide {
+   display: none;
+ }
+
+.services-slider-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
  /* Каким псевдо классом прописать состояние активности для этого слайдера? active */
  .services-list a:active {
   color:#32425c;
@@ -507,6 +629,10 @@ border: 1px solid #e5e5e5;
 
 /* ---------раздел о компании (внизу страницы)--------- */
 /* ---------раздел о компании (внизу страницы)--------- */
+.about {
+  width: 540px;
+}
+
 .about h3 {
   font-family: "Cuprum";
   font-size: 30px;
@@ -526,6 +652,11 @@ list-style: none;
   font-weight: 400;
   line-height: 20px;
   color:#000000;
+}
+
+.about-conatcts-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* текст про перфораторы внизу страницы каталога */
@@ -550,6 +681,10 @@ background-color: #f2f6f8;
 
 
 /* ---------раздел контакты (внизу страницы)--------- */
+.contacts {
+  width: 300px;
+}
+
 .contacts h2 {
   font-family: "Cuprum";
   font-size: 30px;
@@ -565,17 +700,42 @@ background-color: #f2f6f8;
   color: #ffffff;
   background-color: #32425c;
 }
+.footer-adress-wrapper {
+  width: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo-footer-nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.adress-catalog-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .footer-adress,
-.footer-adress a {
+.footer-phone {
   font-family: "Cuprum";
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   color:#ffffff;
+  margin: 0;
+  padding: 0;
 }
 .footer-nav-list {
+  width: 550px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-nav-list a{
@@ -587,7 +747,13 @@ background-color: #f2f6f8;
 }
 
 .footer-catalog {
+  width: 531px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer-catalog a{
   font-family: "Cuprum";
@@ -611,6 +777,9 @@ background-color: #f2f6f8;
 .copyright {
   font-size: 16px;
   line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .feedback {
@@ -636,4 +805,13 @@ background-color: #f2f6f8;
 .feedback span:active {
   text-decoration: none;
   color: #ee3643;
+}
+
+/*----------- модальное окно напишите нам ---------- */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
