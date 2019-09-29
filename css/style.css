@@ -53,11 +53,12 @@ a {
   .top-line-wrapper {
   width: 100%;
   background-color: #293449;
-  }
+   }
 
 .top-line {
   display: flex;
   width: 700px;
+  height: 42px;
   justify-content: space-between;
   font-size: 17px;
   line-height: 18px;
@@ -145,6 +146,8 @@ a {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
  }
 
 .nav-lk a:hover,
@@ -164,10 +167,29 @@ a {
 list-style: none;
 color: #32425c;
 text-decoration: underline;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-betwen;
 }
 
 .personal-area-nav a{
   color: #32425c;
+ }
+
+ .lk-field-wrapper {
+ width: 299px;
+ height: 45px;
+ background-color: #ffffff;
+ }
+
+ .lk-personal-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-betwen;
+  margin-left: auto;
  }
 
 .main-nav {
@@ -181,6 +203,7 @@ text-decoration: underline;
   justify-content: space-around;
   margin:0;
   padding: 0;
+  height: 60px;
 }
 
 .main-nav-list a {
@@ -200,6 +223,8 @@ text-decoration: underline;
 .nav-wrapper {
   width: 100%;
   background-color: #f3f6f8;
+  padding-top: 47px;
+  padding-bottom: 45px;
   }
 
 .nav-contacts-wrapper {
@@ -212,6 +237,60 @@ text-decoration: underline;
   display: flex;
 }
 /* --------------------- main ------------------ */
+
+/* хлебные крошки */
+.breadcrumbs {
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  }
+/* main catalog */
+.catalog-header {
+display: block;
+height: 89px;
+background-color: #f9f5f0;
+margin: 0;
+padding: 0;
+margin-bottom: 20px;
+}
+
+.filter {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  height: 38px;
+  background-color: #f7f3ec;
+}
+.top-sort {
+  width: 700px;
+  height: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.top-sort h3 {
+  margin: 0;
+  padding: 0;
+}
+.top-sort-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-top-sort-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* main */
 .popular-sections,
 .pop-services {
   font-family: "Cuprum";
@@ -322,6 +401,10 @@ background-color: #ba2732;
   background-color: #ffc047;
 }
 /*------------- страница каталога------- */
+.catalog-main {
+  margin-bottom: 60px;
+}
+
 /* формы */
 .top-sort {
   background-color: #f7f3ec;
@@ -355,6 +438,18 @@ border-bottom: none;
 
 .side-sort {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-sort-wrapper {
+  width: 220px;
+}
+
+.side-sort-cards-wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 
 .form-header {
@@ -364,6 +459,7 @@ border-bottom: none;
   color: #000000;
   text-transform: uppercase;
 }
+
 .manufacturer-sort,
 .source-sort {
   font-size: 15px;
@@ -372,9 +468,11 @@ border-bottom: none;
   color: #000000;
   text-transform: uppercase;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.btn-form-sort { /* как <button> стилизовать? рамки не применяются, делать интут type submit? */
+.btn-form-sort { /* Вопрос- как <button> в форме стилизовать? рамки не применяются, делать интут type submit? */
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -442,6 +540,7 @@ border-bottom: none;
 .item-card {
 border: 1px solid #e5e5e5;
 width: 220px;
+margin-bottom: 20px;
 }
 
 .item-header {
@@ -497,9 +596,19 @@ width: 220px;
  opacity: 0.3;
 }
 
+.catalog-cards-wrapper {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /* -----------пагинация------------- */
 .pagination {
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination a {
@@ -508,8 +617,15 @@ width: 220px;
   color: #000000;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+  margin-left: 20px;
 }
 
+/*Как лучше обратиться к первой цифре пагинации чтобы убрать маргин слева? не пойму к какому ребенку...
+
+ .pagination a:first-child {
+  margin-left: 0;
+}
+*/
 .pagination a:hover,
 .current-pagination a:hover {
   color: #000000;
@@ -551,6 +667,7 @@ width: 220px;
     border: none;
     box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
   }
+
 .popular-supliers-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -587,6 +704,7 @@ width: 400px;
 .services-list {
   list-style: none;
 }
+
 .services-list a {
   font-family: "Cuprum";
   font-size: 21px;
@@ -595,6 +713,7 @@ width: 400px;
   color:#ffffff;
   background-color: #32425c;
  }
+
 .services-list a:hover {
  color:#ffffff;
  background-color: #293449;
@@ -627,7 +746,6 @@ width: 400px;
   background-color: #ffffff;
   }
 
-/* ---------раздел о компании (внизу страницы)--------- */
 /* ---------раздел о компании (внизу страницы)--------- */
 .about {
   width: 540px;
@@ -662,7 +780,15 @@ list-style: none;
 /* текст про перфораторы внизу страницы каталога */
 .drils-about {
 background-color: #f2f6f8;
+height: 261px;
 }
+
+.drils-about-wrapper {
+width: 940px;
+margin: 0 auto;
+padding-top: 65px;
+}
+
 .drils-about h3 {
   font-family: "Cuprum";
   font-size: 30px;
@@ -670,6 +796,8 @@ background-color: #f2f6f8;
   font-weight: 400;
   color:#000000;
   text-transform: uppercase;
+  margin:0;
+  padding:0;
 }
 
 .drils-about p {
@@ -808,10 +936,12 @@ background-color: #f2f6f8;
 }
 
 /*----------- модальное окно напишите нам ---------- */
-.modal {
+.modal,
+.make-order-modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
 }
+
