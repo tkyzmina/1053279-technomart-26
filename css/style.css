@@ -945,3 +945,74 @@ padding-top: 65px;
   display: none;
 }
 
+/* окно добавлен в корзину */
+.make-order-modal {
+  width: 620px;
+  height: 282px;
+  background-color: #ffffff;
+}
+
+.make-order-modal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+width: 620px;
+height: 7px;
+background-color: #ee3643;
+}
+
+.make-order-modal h2 {
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  margin-left: 100px;
+}
+
+.make-order-wrapper {
+  padding: 55px 80px 50px 80px;
+  }
+
+  .make-order-wrapper h2::after{
+    content: "";
+      position: absolute;
+      background-image: url(../img/icon-mark.svg);
+      background-repeat: no-repeat;
+      width: 66px;
+      height: 66px;
+      left: 80px;
+      top: 55px;
+  }
+
+  .make-order-btn-section {
+    background-color: #f1f1f1;
+    padding: 37px 80px 37px 80px;
+  }
+
+  .order-modal-close {
+  position: absolute;
+    font-size: 0;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  right: 10px;
+top: 15px;
+}
+
+    .order-modal-close::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/icon-close.svg);
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+      right: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+    }
