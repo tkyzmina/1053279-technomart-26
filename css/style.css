@@ -203,8 +203,7 @@ justify-content: space-betwen;
   justify-content: space-around;
   margin:0;
   padding: 0;
-  height: 60px;
-}
+  }
 
 .main-nav-list a {
   font-size: 17px;
@@ -221,7 +220,6 @@ justify-content: space-betwen;
 }
 
 .nav-wrapper {
-  width: 100%;
   background-color: #f3f6f8;
   padding-top: 47px;
   padding-bottom: 45px;
@@ -360,13 +358,13 @@ background-color: #ba2732;
   margin-bottom: 20px;
 }
 
-.pop-services {
+/* .pop-services {
   order: 1;
 }
 
 .slider {
   order: -1;
-}
+} */
 
 .slide-services-wrapper {
   display: flex;
@@ -508,7 +506,6 @@ justify-content: space-between;
 /*----------------популярные товары---------------- */
 .popular-items-head-wrapper,
 .popular-supliers-head-wrapper {
-  height: 89px;
   background-color: #f9f5f0;
   display: flex;
   justify-content: space-between;
@@ -525,9 +522,7 @@ justify-content: space-between;
 }
 
 .wrapper-pop-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
 }
 
 /*----------- карточка товара ------------*/
@@ -535,6 +530,10 @@ justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
 }
 
 .item-card {
@@ -596,12 +595,6 @@ margin-bottom: 20px;
  opacity: 0.3;
 }
 
-.catalog-cards-wrapper {
-  width: 700px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 /* -----------пагинация------------- */
 .pagination {
@@ -648,6 +641,9 @@ margin-bottom: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .suplier-card {
@@ -667,12 +663,6 @@ margin-bottom: 20px;
     border: none;
     box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
   }
-
-.popular-supliers-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 /* -------------сервисы---------------- */
 .services {
@@ -780,13 +770,11 @@ list-style: none;
 /* текст про перфораторы внизу страницы каталога */
 .drils-about {
 background-color: #f2f6f8;
-height: 261px;
 }
 
 .drils-about-wrapper {
-width: 940px;
-margin: 0 auto;
 padding-top: 65px;
+padding-bottom: 65px;
 }
 
 .drils-about h3 {
@@ -805,6 +793,8 @@ padding-top: 65px;
   line-height: 24px;
   font-weight: 400;
   color:#000000;
+  margin:0;
+  padding:0;
  }
 
 

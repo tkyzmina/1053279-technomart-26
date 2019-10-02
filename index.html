@@ -18,15 +18,13 @@
         <a>
           <img src="img/mainLogo.svg" alt="Логотип Техномарт" width="109" height="19" class="main-logo">
         </a>
+        <form class="top-line" method="GET" action="https://echo.htmlacademy.ru">
+          <label aria-label="Поиск" for="search"></label><input type="search" placeholder="Поиск:" class="search"
+            id="search"></form>
         <div class="top-line">
-          <form method="GET" action="https://echo.htmlacademy.ru">
-            <label aria-label="Поиск" for="search"></label><input type="search" placeholder="Поиск:" class="search"
-              id="search"></form>
-          <div>
-            <a href="#" class="bookmarks">Закладки: 0</a>
-            <a href="#" class="basket">Корзина: 0</a>
-            <a href="#" class="order">Оформить заказ</a>
-          </div>
+          <a href="#" class="bookmarks">Закладки: 0</a>
+          <a href="#" class="basket">Корзина: 0</a>
+          <a href="#" class="order">Оформить заказ</a>
         </div>
       </div>
     </div>
@@ -77,20 +75,6 @@
       </ul>
     </section>
     <div class="slide-services-wrapper">
-      <section class="pop-services">
-        <h2 class="visually-hidden">Полулярные услуги</h2>
-        <ul class="pop-services-list">
-          <li class="discounts">
-            <h3>Скидки 50%</h3>
-            <a href="#" class="btn btn-section">На 350 товаров</a>
-          </li>
-          <li class="popular-delivery">
-            <h3>Доставка</h3>
-            <a href="#" class="btn btn-section">Бесплатно</a>
-          </li>
-        </ul>
-      </section>
-
       <section class="slider">
         <h2 class="visually-hidden">Популярный ручной инструмет</h2>
         <ul class="slider-list">
@@ -112,6 +96,19 @@
           </li>
         </ul>
       </section>
+      <section class="pop-services">
+        <h2 class="visually-hidden">Полулярные услуги</h2>
+        <ul class="pop-services-list">
+          <li class="discounts">
+            <h3>Скидки 50%</h3>
+            <a href="#" class="btn btn-section">На 350 товаров</a>
+          </li>
+          <li class="popular-delivery">
+            <h3>Доставка</h3>
+            <a href="#" class="btn btn-section">Бесплатно</a>
+          </li>
+        </ul>
+      </section>
     </div>
 
 
@@ -122,67 +119,65 @@
       </div>
 
       <ul class="items-list">
-        <div class="wrapper-pop-items">
-          <li class="item-card">
-            <h3 class="item-header">
-              <a href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 9000</span>
-              </a>
-            </h3>
-            <p>
-              <img src="img/perforator_1.jpg" alt="Перфоратор Bosh BGF 9000" width="218" height="170">
-            </p>
-            <del class="old-price">32500 P.</del>
-            <p class="current-price">25500 P.</p>
-            <a href="#" class="btn btn-cart">Купить</a>
-            <a href="#" class="btn btn-bookmark">В закладки</a>
-          </li>
-          <li class="item-card">
-            <h3 class="item-header">
-              <a href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 3000</span>
-              </a>
-            </h3>
-            <p>
-              <img src="img/perforator_2.jpg" alt="Перфоратор Bosh BGF 3000" width="218" height="170">
-            </p>
-            <del class="old-price">22500 P.</del>
-            <p class="current-price">15500 P.</p>
-            <a href="#" class="btn btn-cart">Купить</a>
-            <a href="#" class="btn btn-bookmark">В закладки</a>
-          </li>
-          <li class="item-card">
-            <h3 class="item-header">
-              <a href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 6000</span>
-              </a>
-            </h3>
-            <p>
-              <img src="img/perforator_3.jpg" alt="Перфоратор Bosh BGF 6000" width="218" height="170">
-            </p>
-            <del class="old-price">30500 P.</del>
-            <p class="current-price">25500 P.</p>
-            <a href="#" class="btn btn-cart">Купить</a>
-            <a href="#" class="btn btn-bookmark">В закладки</a>
-          </li>
-          <li class="item-card">
-            <h3 class="item-header">
-              <a href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 2000</span>
-              </a>
-            </h3>
-            <p>
-              <img src="img/perforator_4.jpg" alt="Перфоратор Bosh BGF 2000" width="218" height="170">
-            </p>
-            <p class="current-price">12500 P.</p>
-            <a href="#" class="btn btn-cart">Купить</a>
-            <a href="#" class="btn btn-bookmark">В закладки</a>
-          </li>
-        </div>
+        <li class="item-card">
+          <h3 class="item-header">
+            <a href="#">
+              <span>Перфоратор BOSCH</span>
+              <span>BFG 9000</span>
+            </a>
+          </h3>
+          <p>
+            <img src="img/perforator_1.jpg" alt="Перфоратор Bosh BGF 9000" width="218" height="170">
+          </p>
+          <del class="old-price">32500 P.</del>
+          <p class="current-price">25500 P.</p>
+          <a href="#" class="btn btn-cart">Купить</a>
+          <a href="#" class="btn btn-bookmark">В закладки</a>
+        </li>
+        <li class="item-card">
+          <h3 class="item-header">
+            <a href="#">
+              <span>Перфоратор BOSCH</span>
+              <span>BFG 3000</span>
+            </a>
+          </h3>
+          <p>
+            <img src="img/perforator_2.jpg" alt="Перфоратор Bosh BGF 3000" width="218" height="170">
+          </p>
+          <del class="old-price">22500 P.</del>
+          <p class="current-price">15500 P.</p>
+          <a href="#" class="btn btn-cart">Купить</a>
+          <a href="#" class="btn btn-bookmark">В закладки</a>
+        </li>
+        <li class="item-card">
+          <h3 class="item-header">
+            <a href="#">
+              <span>Перфоратор BOSCH</span>
+              <span>BFG 6000</span>
+            </a>
+          </h3>
+          <p>
+            <img src="img/perforator_3.jpg" alt="Перфоратор Bosh BGF 6000" width="218" height="170">
+          </p>
+          <del class="old-price">30500 P.</del>
+          <p class="current-price">25500 P.</p>
+          <a href="#" class="btn btn-cart">Купить</a>
+          <a href="#" class="btn btn-bookmark">В закладки</a>
+        </li>
+        <li class="item-card">
+          <h3 class="item-header">
+            <a href="#">
+              <span>Перфоратор BOSCH</span>
+              <span>BFG 2000</span>
+            </a>
+          </h3>
+          <p>
+            <img src="img/perforator_4.jpg" alt="Перфоратор Bosh BGF 2000" width="218" height="170">
+          </p>
+          <p class="current-price">12500 P.</p>
+          <a href="#" class="btn btn-cart">Купить</a>
+          <a href="#" class="btn btn-bookmark">В закладки</a>
+        </li>
       </ul>
     </section>
 
@@ -192,48 +187,46 @@
         <a href="#" class="btn">Все производители</a>
       </div>
       <ul class="supliers-list">
-        <div class="popular-supliers-wrapper">
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/bosch.jpg" alt="Логотип Bosh" width="126" height="37">
-            </a>
-          </li>
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/makita.jpg" alt="Логотип Makita" width="123" height="40">
-            </a>
-          </li>
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/dewalt.jpg" alt="Логотип DeWALT" width="146" height="44">
-            </a>
-          </li>
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/interskol.jpg" alt="Логотип Интрескол" width="200" height="88">
-            </a>
-          </li>
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/hitachi.jpg" alt="Логотип Hitachi" width="169" height="31">
-            </a>
-          </li>
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/lg.jpg" alt="Логотип LG" width="121" height="73">
-            </a>
-          </li>
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/aeg.jpg" alt="Логотип AEG" width="151" height="96">
-            </a>
-          </li>
-          <li class="suplier-card">
-            <a href="#">
-              <img src="img/metabo.jpg" alt="Логотип Metabo" width="204" height="69">
-            </a>
-          </li>
-        </div>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/bosch.jpg" alt="Логотип Bosh" width="126" height="37">
+          </a>
+        </li>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/makita.jpg" alt="Логотип Makita" width="123" height="40">
+          </a>
+        </li>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/dewalt.jpg" alt="Логотип DeWALT" width="146" height="44">
+          </a>
+        </li>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/interskol.jpg" alt="Логотип Интрескол" width="200" height="88">
+          </a>
+        </li>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/hitachi.jpg" alt="Логотип Hitachi" width="169" height="31">
+          </a>
+        </li>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/lg.jpg" alt="Логотип LG" width="121" height="73">
+          </a>
+        </li>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/aeg.jpg" alt="Логотип AEG" width="151" height="96">
+          </a>
+        </li>
+        <li class="suplier-card">
+          <a href="#">
+            <img src="img/metabo.jpg" alt="Логотип Metabo" width="204" height="69">
+          </a>
+        </li>
       </ul>
 
     </section>
@@ -303,7 +296,7 @@
   </main>
 
   <footer class="footer">
-    <section class="container">
+    <div class="container">
       <div class="logo-footer-nav-wrapper">
         <a><img src="img/mainLogo.svg" alt="Логотип Техномарт" width="138" height="23" class="main-logo"></a>
         <nav>
@@ -328,7 +321,7 @@
         </ul>
       </div>
       </nav>
-    </section>
+    </div>
     <section class="copyright container">
       <p>© 2010–2019 Компания «Техномарт»<br>
         Все права защищены</p>
