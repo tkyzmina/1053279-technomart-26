@@ -18,13 +18,15 @@
         <a>
           <img src="img/mainLogo.svg" alt="Логотип Техномарт" width="109" height="19" class="main-logo">
         </a>
-        <form class="top-line" method="GET" action="https://echo.htmlacademy.ru">
-          <label aria-label="Поиск" for="search"></label><input type="search" placeholder="Поиск:" class="search"
-            id="search"></form>
-        <div class="top-line">
-          <a href="#" class="bookmarks">Закладки: 0</a>
-          <a href="#" class="basket">Корзина: 0</a>
-          <a href="#" class="order">Оформить заказ</a>
+        <div class="search-topline-wrapper">
+          <form method="GET" action="https://echo.htmlacademy.ru">
+            <label aria-label="Поиск" for="search"></label><input type="search" placeholder="Поиск:" class="search"
+              id="search"></form>
+          <div class="top-line">
+            <a href="#" class="bookmarks">Закладки: 0</a>
+            <a href="#" class="basket">Корзина: 0</a>
+            <a href="#" class="order">Оформить заказ</a>
+          </div>
         </div>
       </div>
     </div>
@@ -119,64 +121,78 @@
       </div>
 
       <ul class="items-list">
+
         <li class="item-card">
+          <div class="actions">
+            <a href="#" class="btn btn-cart">Купить</a>
+            <a href="#" class="btn btn-bookmark">В закладки</a>
+          </div>
+          <p>
+            <img src="img/perforator_1.jpg" alt="Перфоратор Bosh BGF 9000" width="218" height="170">
+          </p>
           <h3 class="item-header">
             <a href="#">
               <span>Перфоратор BOSCH</span>
               <span>BFG 9000</span>
             </a>
           </h3>
-          <p>
-            <img src="img/perforator_1.jpg" alt="Перфоратор Bosh BGF 9000" width="218" height="170">
-          </p>
           <del class="old-price">32500 P.</del>
           <p class="current-price">25500 P.</p>
-          <a href="#" class="btn btn-cart">Купить</a>
-          <a href="#" class="btn btn-bookmark">В закладки</a>
         </li>
+
         <li class="item-card">
+          <div class="actions">
+            <a href="#" class="btn btn-cart">Купить</a>
+            <a href="#" class="btn btn-bookmark">В закладки</a>
+          </div>
+          <p>
+            <img src="img/perforator_2.jpg" alt="Перфоратор Bosh BGF 3000" width="218" height="170">
+          </p>
           <h3 class="item-header">
             <a href="#">
               <span>Перфоратор BOSCH</span>
               <span>BFG 3000</span>
             </a>
           </h3>
-          <p>
-            <img src="img/perforator_2.jpg" alt="Перфоратор Bosh BGF 3000" width="218" height="170">
-          </p>
           <del class="old-price">22500 P.</del>
           <p class="current-price">15500 P.</p>
-          <a href="#" class="btn btn-cart">Купить</a>
-          <a href="#" class="btn btn-bookmark">В закладки</a>
         </li>
+
         <li class="item-card">
+          <div class="actions">
+            <a href="#" class="btn btn-cart">Купить</a>
+            <a href="#" class="btn btn-bookmark">В закладки</a>
+          </div>
+          <p>
+            <img src="img/perforator_3.jpg" alt="Перфоратор Bosh BGF 6000" width="218" height="170">
+          </p>
           <h3 class="item-header">
             <a href="#">
               <span>Перфоратор BOSCH</span>
               <span>BFG 6000</span>
             </a>
           </h3>
-          <p>
-            <img src="img/perforator_3.jpg" alt="Перфоратор Bosh BGF 6000" width="218" height="170">
-          </p>
           <del class="old-price">30500 P.</del>
           <p class="current-price">25500 P.</p>
-          <a href="#" class="btn btn-cart">Купить</a>
-          <a href="#" class="btn btn-bookmark">В закладки</a>
         </li>
+
         <li class="item-card">
+          <div class="flag flag-new">новинка</div>
+          <div class="actions">
+            <a href="#" class="btn btn-cart">Купить</a>
+            <a href="#" class="btn btn-bookmark">В закладки</a>
+          </div>
+          <p>
+            <img src="img/perforator_4.jpg" alt="Перфоратор Bosh BGF 2000" width="218" height="170">
+          </p>
           <h3 class="item-header">
             <a href="#">
               <span>Перфоратор BOSCH</span>
               <span>BFG 2000</span>
             </a>
           </h3>
-          <p>
-            <img src="img/perforator_4.jpg" alt="Перфоратор Bosh BGF 2000" width="218" height="170">
-          </p>
+          <del class="old-price"></del>
           <p class="current-price">12500 P.</p>
-          <a href="#" class="btn btn-cart">Купить</a>
-          <a href="#" class="btn btn-bookmark">В закладки</a>
         </li>
       </ul>
     </section>
@@ -296,9 +312,9 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-top">
       <div class="logo-footer-nav-wrapper">
-        <a><img src="img/mainLogo.svg" alt="Логотип Техномарт" width="138" height="23" class="main-logo"></a>
+        <a><img src="img/mainLogo.svg" alt="Логотип Техномарт" width="138" height="23" class="main-logo-footer"></a>
         <nav>
           <ul class="footer-nav-list">
             <li><a href="#">Компания</a></li>
@@ -322,21 +338,23 @@
       </div>
       </nav>
     </div>
-    <section class="copyright container">
-      <p>© 2010–2019 Компания «Техномарт»<br>
-        Все права защищены</p>
-      <div>
-        <p><a href="#" aria-label="Вконтакте"></a></p>
-        <p><a href="#" aria-label="Фейсбук"></a></p>
-        <p><a href="#" aria-label="Инстаграм"></a></p>
-      </div>
-      <ul class="feedback">
-        <li><a href="mailto:mail@htmlacademy.ru">Обратная связь:
-            <span>mail@htmlacademy.ru</span> </a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss">Разработано —
-            <span> htmlacademy.ru</span></a></li>
-      </ul>
-    </section>
+    <div class="copyright-wrapper">
+      <section class="copyright container">
+        <p>© 2010–2019 Компания «Техномарт»<br>
+          Все права защищены</p>
+        <div>
+          <p><a href="#" aria-label="Вконтакте"></a></p>
+          <p><a href="#" aria-label="Фейсбук"></a></p>
+          <p><a href="#" aria-label="Инстаграм"></a></p>
+        </div>
+        <ul class="feedback">
+          <li><a href="mailto:mail@htmlacademy.ru">Обратная связь:
+              <span>mail@htmlacademy.ru</span> </a></li>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss">Разработано —
+              <span> htmlacademy.ru</span></a></li>
+        </ul>
+      </section>
+    </div>
   </footer>
   <div class="modal" id="modal">
     <form method="POST" action="https://echo.htmlacademy.ru">
