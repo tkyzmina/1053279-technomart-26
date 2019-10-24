@@ -23,8 +23,8 @@
         <!--class="top-line-search"-->
         <div class="search-topline-wrapper">
           <form class="form-search" method="GET" action="https://echo.htmlacademy.ru">
-            <label aria-label="Поиск" for="search" class="label-search"></label><input type="search"
-              placeholder="Поиск:" class="search" id="search">
+            <input type="search" placeholder="Поиск:" class="search" id="search">
+            <label aria-label="Поиск" for="search" class="label-search"></label>
           </form>
           <div class="top-line">
             <a href="#" class="bookmarks">Закладки: 0</a>
@@ -37,19 +37,19 @@
     <div class="nav-wrapper">
       <div class="container">
         <div class="middle-nav-wrapper">
-          <h1 class="main-desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <div class="tag">
+            <h1 class="main-desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          </div>
           <div class="nav-contacts-wrapper">
-            <a href="tel:+78125550555" class="phonenumber">+7(812)555-05-55</a>
+            <a href="tel:+78125550555" class="phonenumber">+7 (812) 555-05-55</a>
             <p class="nav-addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="lk-personal-wrapper">
-            <div class="lk-field-wrapper">
-              <a href="#" class="personal-area">Равшан Джамшутович</a>
-            </div>
-            <a href="#" class="visually-hidden">Выход</a>
+            <a href="#" class="personal-area" aria-label="Личный кабинет">Равшан Джамшутович</a>
+            <a href="#" class="exit" aria-label="Выход"></a>
             <ul class="personal-area-nav">
-              <li><a href="#">Мои заказы</a></li>
-              <li><a href="#">Личный кабинет</a></li>
+              <li><a href="#" class="my-order">Мои заказы</a></li>
+              <li><a href="#" class="privat-cab">Личный кабинет</a></li>
             </ul>
           </div>
         </div>
@@ -70,9 +70,10 @@
   <main>
     <div class="container">
       <ul class="breadcrumbs">
-        <li><a>Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a>Перфораторы</a></li>
+        <li><a href="index.html" aria-label="На главную" class="home"></a></li>
+        <li><a href="#" class="breadcrumbs-cat">Каталог</a></li>
+        <li><a href="#" class="breadcrumbs-tools">Инструмент</a></li>
+        <li><a class="breadcrumbs-perf">Перфораторы</a></li>
       </ul>
       <h2 class="catalog-header">Перфораторы</h2>
 
@@ -85,6 +86,10 @@
             <li><a>По типу</a></li>
             <li><a>По функционалу</a></li>
           </ul>
+          <div class="sort-top-down">
+            <a href="#" class="top"></a>
+            <a href="#" class="bottom"></a>
+          </div>
         </section>
       </div>
       <div class="side-sort-cards-wrapper">
@@ -97,7 +102,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    <div class="bar"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -154,7 +159,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="btn-form-sort">Показать</button>
+            <button type="submit" class=" btn btn-form-sort">Показать</button>
           </form>
         </div>
         <section class="catalog-main">

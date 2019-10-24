@@ -19,9 +19,10 @@
           <img src="img/mainLogo.svg" alt="Логотип Техномарт" width="109" height="19" class="main-logo">
         </a>
         <div class="search-topline-wrapper">
-          <form method="GET" action="https://echo.htmlacademy.ru">
-            <label aria-label="Поиск" for="search"></label><input type="search" placeholder="Поиск:" class="search"
-              id="search"></form>
+          <form class="form-search" method="GET" action="https://echo.htmlacademy.ru">
+            <input type="search" placeholder="Поиск:" class="search" id="search">
+            <label aria-label="Поиск" for="search" class="label-search"></label>
+          </form>
           <div class="top-line">
             <a href="#" class="bookmarks">Закладки: 0</a>
             <a href="#" class="basket">Корзина: 0</a>
@@ -33,14 +34,16 @@
     <div class="nav-wrapper">
       <div class="container">
         <div class="middle-nav-wrapper">
-          <h1 class="main-desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <div class="tag">
+            <h1 class="main-desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          </div>
           <div class="nav-contacts-wrapper">
-            <a href="tel:+78125550555" class="phonenumber">+7(812)555-05-55</a>
+            <a href="tel:+78125550555" class="phonenumber">+7 (812) 555-05-55</a>
             <p class="nav-addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <ul class="nav-lk">
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Регистрация</a></li>
+            <li><a href="#" class="enter">Войти</a></li>
+            <li><a href="#" class="registration">Регистрация</a></li>
           </ul>
         </div>
         <nav class="main-nav">
@@ -58,8 +61,8 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="popular-sections">
+  <main>
+    <section class="popular-sections container">
       <h2 class="visually-hidden">Полулярные категории</h2>
       <ul class="sections-list">
         <li class="materials">
@@ -76,20 +79,18 @@
         </li>
       </ul>
     </section>
-    <div class="slide-services-wrapper">
+    <div class="slide-services-wrapper container">
       <section class="slider">
         <h2 class="visually-hidden">Популярный ручной инструмет</h2>
         <ul class="slider-list">
-          <li>
-            <img src="img/slider1.jpg" alt="Дрели" width="620" height="266">
+          <li class="slider-1">
             <h3>
               <span class="slider-desc">Дрели</span>
               <span class="slider-text">Соседям на радость!</span>
             </h3>
             <a href="catalog.html" class="btn">Открыть каталог</a>
           </li>
-          <li>
-            <img src="img/slider2.jpg" alt="Перфораторы" width="620" height="266">
+          <li class="slider-2">
             <h3>
               <span class="slider-desc">Перфораторы</span>
               <span class="slider-text">Настоящие мужские игрушки</span>
@@ -114,7 +115,7 @@
     </div>
 
 
-    <section>
+    <section class="popular-items container">
       <div class="popular-items-head-wrapper">
         <h2 class="popular-items-head">Популярные товары</h2>
         <a href="catalog.html" class="btn">Все популярные товары</a>
@@ -197,7 +198,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="popular-supliers container">
       <div class="popular-supliers-head-wrapper">
         <h2 class="popular-supliers-head">Популярные производители</h2>
         <a href="#" class="btn">Все производители</a>
@@ -248,48 +249,53 @@
     </section>
 
     <section class="services">
-      <div class="servises-descr">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      </div>
-      <div class="services-slider-wrapper">
-        <ul class="services-list">
-          <!--слайдер на js-->
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Кредит</a></li>
-        </ul>
-        <div class="services-slider-list">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+      <div class="container">
+        <div class="servises-descr">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div class="services-slider-list services-slider-list-hide">
-          <h3>Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит,
-            а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
-            Мы
-            обменяем сгоревший товар на новый.
-            Дом уж восстановите как-нибудь сами</p>
-        </div>
-        <div class="services-slider-list services-slider-list-hide">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще!
-            Кредитные консультанты придут вам на помощь.
-          </p>
-          <a href="#" class="btn">Оставить заявку</a>
+        <div class="services-slider-wrapper">
+          <input type="radio" id="delivery" name="services-nav" checked>
+          <input type="radio" id="warranty" name="services-nav">
+          <input type="radio" id="credit" name="services-nav">
+          <label for="delivery">Доставка</label>
+          <label for="warranty">Гарантия</label>
+          <label for="credit">Кредит</label>
+          <div class="services-slider">
+            <div class="services-slider-list">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+            </div>
+            <div class="services-slider-list">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, <br>
+                а также в случае пожара, спровоцированного его возгоранием, <br> вы всегда можете быть уверены в нашей
+                гарантии.
+                Мы
+                обменяем <br>сгоревший товар на новый.<br>
+                Дом уж восстановите как-нибудь сами</p>
+            </div>
+            <div class="services-slider-list">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще!<br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a href="#" class="btn">Оставить заявку</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="about-conatcts-wrapper">
+    <div class="about-conatcts-wrapper container">
       <section class="about">
         <h2 class="visually-hidden">О компании</h2>
         <h3>КОМПАНИЯ «Техномарт»</h3>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями: </p>
         <ul class="delivery-comp">
           <li><a href="#">Деловые линии</a></li>
@@ -301,11 +307,11 @@
 
       <section class="contacts">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами,
+        <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
         <a href="#"><img src="img/map_small.png" alt="Адрес компании г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
             width="300" height="158"></a>
-        <a href="#" class="btn">Заблудились? Напишите нам!</a>
+        <a href="#" class="btn footer-contacts-button">Заблудились? Напишите нам!</a>
       </section>
     </div>
 
@@ -342,34 +348,46 @@
       <section class="copyright container">
         <p>© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
-        <div>
-          <p><a href="#" aria-label="Вконтакте"></a></p>
-          <p><a href="#" aria-label="Фейсбук"></a></p>
-          <p><a href="#" aria-label="Инстаграм"></a></p>
+        <div class="socials">
+          <p class="vk"><a href="#" aria-label="Вконтакте"></a></p>
+          <p class=fb><a href="#" aria-label="Фейсбук"></a></p>
+          <p class="insta"><a href="#" aria-label="Инстаграм"></a></p>
         </div>
         <ul class="feedback">
-          <li><a href="mailto:mail@htmlacademy.ru">Обратная связь:
+          <li class="feedback-li"><a href="mailto:mail@htmlacademy.ru">Обратная связь:
               <span>mail@htmlacademy.ru</span> </a></li>
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss">Разработано —
+          <li class="developed-by"><a href="https://htmlacademy.ru/intensive/htmlcss">Разработано —
               <span> htmlacademy.ru</span></a></li>
         </ul>
       </section>
     </div>
+    <div class="modal" id="modal">
+      <form method="POST" action="https://echo.htmlacademy.ru" class="write-to-us-form">
+        <fieldset class="write-to-us">
+          <div class="top-write">
+            <legend class="visually-hidden">Напишите нам</legend>
+            <label for="modal-name" class="modal-name">Ваше имя:
+              <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия">
+            </label>
+            <label for="modal-email" class="modal-email">Ваш e-mail:
+              <input type="email" name="email" id="modal-email" placeholder="email@example.com">
+            </label>
+          </div>
+          <label for="modal-message">Текст письма:
+            <textarea name="message" id="modal-message" cols="30" rows="10" placeholder="В свободной форме"
+              class="comment-area"></textarea>
+          </label>
+        </fieldset>
+        <div class="send">
+          <button type="submit" class="btn">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close">Закрыть</button>
+    </div>
   </footer>
-  <div class="modal" id="modal">
-    <form method="POST" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend class="visually-hidden">Напишите нам</legend>
-        <label for="modal-name">Ваше имя:</label>
-        <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия">
-        <label for="modal-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="modal-email" placeholder="email@example.com">
-        <label for="modal-message">Текст письма:</label>
-        <textarea name="message" id="modal-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </fieldset>
-      <button type="submit" class="btn">Отправить</button>
-    </form>
-  </div>
+
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
