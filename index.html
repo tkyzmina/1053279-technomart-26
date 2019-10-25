@@ -82,15 +82,21 @@
     <div class="slide-services-wrapper container">
       <section class="slider">
         <h2 class="visually-hidden">Популярный ручной инструмет</h2>
+        <input type="radio" id="slide-1" name="slider">
+        <input type="radio" id="slide-2" name="slider" checked>
+        <div class="slider-controls">
+          <label for="slide-1" class="label-right"></label>
+          <label for="slide-2" class="label-left"></label>
+        </div>
         <ul class="slider-list">
-          <li class="slider-1">
+          <li class="slider-1 slider-item">
             <h3>
               <span class="slider-desc">Дрели</span>
               <span class="slider-text">Соседям на радость!</span>
             </h3>
             <a href="catalog.html" class="btn">Открыть каталог</a>
           </li>
-          <li class="slider-2">
+          <li class="slider-2 slider-item">
             <h3>
               <span class="slider-desc">Перфораторы</span>
               <span class="slider-text">Настоящие мужские игрушки</span>
@@ -98,6 +104,7 @@
             <a href="catalog.html" class="btn">Открыть каталог</a>
           </li>
         </ul>
+
       </section>
       <section class="pop-services">
         <h2 class="visually-hidden">Полулярные услуги</h2>
@@ -113,16 +120,12 @@
         </ul>
       </section>
     </div>
-
-
     <section class="popular-items container">
       <div class="popular-items-head-wrapper">
         <h2 class="popular-items-head">Популярные товары</h2>
         <a href="catalog.html" class="btn">Все популярные товары</a>
       </div>
-
       <ul class="items-list">
-
         <li class="item-card">
           <div class="actions">
             <a href="#" class="btn btn-cart">Купить</a>

@@ -20,7 +20,6 @@
         <a href="index.html"><img src="img/mainLogo.svg" alt="Логотип Техномарт" width="109" height="19"
             class="main-logo">
         </a>
-        <!--class="top-line-search"-->
         <div class="search-topline-wrapper">
           <form class="form-search" method="GET" action="https://echo.htmlacademy.ru">
             <input type="search" placeholder="Поиск:" class="search" id="search">
@@ -76,27 +75,25 @@
         <li><a class="breadcrumbs-perf">Перфораторы</a></li>
       </ul>
       <h2 class="catalog-header">Перфораторы</h2>
-
-      <div class="filter-top-sort-wrapper">
-        <h2 class="filter">Фильтр:</h2>
-        <section class="top-sort">
-          <h3>Сортировка:</h3>
-          <ul class="top-sort-list">
-            <li><a>По цене</a></li>
-            <li><a>По типу</a></li>
-            <li><a>По функционалу</a></li>
-          </ul>
-          <div class="sort-top-down">
-            <a href="#" class="top"></a>
-            <a href="#" class="bottom"></a>
-          </div>
-        </section>
-      </div>
       <div class="side-sort-cards-wrapper">
+        <div class="filter-top-sort-wrapper">
+          <h2 class="filter">Фильтр:</h2>
+          <section class="top-sort">
+            <h3>Сортировка:</h3>
+            <ul class="top-sort-list">
+              <li><a>По цене</a></li>
+              <li><a>По типу</a></li>
+              <li><a>По функционалу</a></li>
+            </ul>
+            <div class="sort-top-down">
+              <a href="#" class="top"></a>
+              <a href="#" class="bottom"></a>
+            </div>
+          </section>
+        </div>
         <div class="side-sort-wrapper">
           <form class="form-catalog" method="GET" action="https://echo.htmlacademy.ru">
 
-            <!--фильтр range из демки -->
             <fieldset class="filter-item side-sort">
               <legend class="form-header">Цена:</legend>
               <div class="range-filter">
@@ -114,38 +111,41 @@
               </div>
             </fieldset>
 
-            <fieldset class="side-sort">
-              <legend class="form-header">Производители:</legend>
-              <ul class="manufacturer-sort">
-                <li>
-                  <input type="checkbox" name="bosch" id="bosch" checked
-                    class="visually-hidden filter-input-checkbox filter-input">
-                  <label for="bosch">Bosch</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="interskol" id="interskol"
-                    class="visually-hidden filter-input-checkbox filter-input">
-                  <label for="interskol">Интерскол</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="makita" id="makita" checked
-                    class="visually-hidden filter-input-checkbox filter-input">
-                  <label for="makita">Makita</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="dewalt" id="dewalt"
-                    class="visually-hidden filter-input-checkbox filter-input">
-                  <label for="dewalt">Dewalt</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="hitachi" id="hitachi"
-                    class="visually-hidden filter-input-checkbox filter-input">
-                  <label for="hitachi">Hitachi</label>
-                </li>
-              </ul>
+            <fieldset class="side-sort middle">
+              <div class="middle-sort">
+                <legend class="form-header">Производители:</legend>
+                <ul class="manufacturer-sort">
+                  <li>
+                    <input type="checkbox" name="bosch" id="bosch" checked
+                      class="visually-hidden filter-input-checkbox filter-input">
+                    <label for="bosch">Bosch</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="interskol" id="interskol"
+                      class="visually-hidden filter-input-checkbox filter-input">
+                    <label for="interskol">Интерскол</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="makita" id="makita" checked
+                      class="visually-hidden filter-input-checkbox filter-input">
+                    <label for="makita">Makita</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="dewalt" id="dewalt"
+                      class="visually-hidden filter-input-checkbox filter-input">
+                    <label for="dewalt">Dewalt</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="hitachi" id="hitachi"
+                      class="visually-hidden filter-input-checkbox filter-input">
+                    <label for="hitachi">Hitachi</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
+
             <fieldset class="side-sort">
-              <legend class="form-header">Питание:</legend>
+              <legend class="form-header sourse">Питание:</legend>
               <ul class="source-sort">
                 <li>
                   <input type="radio" name="power" value="battery" id="filter-battery" checked
@@ -411,7 +411,8 @@
       </div>
     </section>
   </footer>
-
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
