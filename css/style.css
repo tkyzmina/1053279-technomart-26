@@ -2360,3 +2360,36 @@ input[type=search]:focus+label {
   -webkit-animation: bounce 0.7s;
   animation: bounce 0.7s;
 }
+
+.map-show {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  display: none;
+  height: 446px;
+  margin-left: -470px;
+  z-index: 1000;
+  -webkit-box-shadow: 0 2px 50px rgba(0, 0, 0, .5);
+  box-shadow: 0 2px 50px rgba(0, 0, 0, .5);
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-animation: bounce .4s;
+  animation: bounce .4s;
+}
+
+.close {
+  position: absolute;
+  top: 7px;
+  right: 22px;
+  cursor: pointer;
+  background: url(../img/icon-close.svg);
+  width: 21px;
+  height: 21px;
+  top: 10px;
+  right: 10px;
+}
+
+.content-show {
+  display: block;
+}
