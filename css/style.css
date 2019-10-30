@@ -50,14 +50,14 @@ a {
 .main-logo {
   position: absolute;
   background-color: #ee3643;
-  padding: 12px 60px 10px 50px;
+  padding: 12px 55px 10px 55px;
   margin: 0;
   border-bottom: 5px solid #b52933;
 }
 
 .main-logo-footer {
   background-color: #ee3643;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 42px 20px 40px;
   margin: 0;
   border-bottom: 5px solid #b52933;
 }
@@ -97,7 +97,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 460px;
+  width: 450px;
   height: 42px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -126,7 +126,8 @@ a {
 }
 
 .top-line a {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
+  ;
   color: #ffffff;
   padding-top: 12px;
 }
@@ -134,21 +135,22 @@ a {
 .order {
   width: 150px;
   background-color: #63a63e;
-  padding: 0 0 0 15px;
+  text-align: center;
+  /* padding: 0 0 0 20px; */
 }
 
 .basket {
   position: relative;
   width: 100px;
-  padding: 0 20px 0 50px;
+  padding: 0 0 0 50px;
   background-color: #ee3643;
 }
 
 .basket::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 24px;
+  top: 11px;
+  left: 19px;
   width: 16px;
   height: 18px;
   background-image: url("../img/icon-cart.svg");
@@ -160,14 +162,14 @@ a {
 .bookmarks {
   width: 105px;
   position: relative;
-  padding: 0 10px 0 55px;
+  padding: 0 0 0 45px;
 }
 
 .bookmarks::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 24px;
+  top: 12px;
+  left: 18px;
   width: 16px;
   height: 18px;
   background-image: url("../img/icon-bookmark.svg");
@@ -284,12 +286,12 @@ input[type=search]:focus+label {
   width: 200px;
 }
 
-.phonenumber {
+.phone-number {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
   border: 3px solid #fff;
-  padding: 10.5px 40px 10.5px 72px;
+  padding: 9px 40px 10px 72px;
   background: url(../img/icon-phone.svg) no-repeat 15px 10px;
 }
 
@@ -297,7 +299,7 @@ input[type=search]:focus+label {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  padding: 4px 0 0 10px;
+  padding: 2px 0 0 10px;
   margin: 0;
 }
 
@@ -311,7 +313,10 @@ input[type=search]:focus+label {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: 0;
   margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
 
 .enter {
@@ -344,7 +349,7 @@ input[type=search]:focus+label {
   position: absolute;
   width: 45px;
   height: 45px;
-  top: 0;
+  top: 2px;
   left: 0;
   background: url(../img/icon-user.svg) no-repeat 15px 10px;
 }
@@ -365,7 +370,7 @@ input[type=search]:focus+label {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  padding: 12px 26px 14px 46px;
+  padding: 9px 26px 10px 46px;
   vertical-align: middle;
 }
 
@@ -391,7 +396,7 @@ input[type=search]:focus+label {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  padding: 12px 25px 14px 23px;
+  padding: 9px 25px 10px 23px;
   vertical-align: middle;
 }
 
@@ -505,7 +510,6 @@ input[type=search]:focus+label {
 
 .main-nav-list a {
   display: block;
-  vertical-align: middle;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -524,9 +528,13 @@ input[type=search]:focus+label {
 
 .nav-wrapper {
   background-color: #f3f6f8;
-  padding-top: 45px;
-  padding-bottom: 55px;
+  padding-top: 47px;
+  padding-bottom: 60px;
   margin-bottom: 20px;
+}
+
+.inner .nav-wrapper {
+  margin-bottom: 17px;
 }
 
 .nav-contacts-wrapper {
@@ -549,6 +557,10 @@ input[type=search]:focus+label {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 39px;
+}
+
+.inner .middle-nav-wrapper {
+  margin-bottom: 38px;
 }
 
 .tag {
@@ -633,15 +645,15 @@ input[type=search]:focus+label {
 /* main */
 
 .popular-sections, .pop-services {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .popular-sections {
-  margin-top: 63px;
+  margin-top: 59.5px;
 }
 
 .btn {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -685,77 +697,58 @@ input[type=search]:focus+label {
 
 /* ------------breadcrumbs---------  */
 
-/* хлебные крошки */
-
 .breadcrumbs {
-  list-style: none;
-  width: 373px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
-  margin-bottom: 20px;
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  padding-right: 22px;
+  line-height: 18px;
+}
+
+.breadcrumbs-item:first-of-type {
+  padding-right: 36px;
+}
+
+.breadcrumbs-item:not(:first-of-type) {
+  padding-left: 19px;
 }
 
 .breadcrumbs a {
-  position: relative;
-  font-size: 13px;
-  line-height: 18px;
   color: #000000;
-  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.breadcrumbs .sections-list, .pop-services-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.home::before {
+.breadcrumbs-item:first-of-type a::before {
   content: "";
   position: absolute;
-  background: url(../img/icon-home.svg) no-repeat;
-  left: -20px;
-  top: 5px;
-  width: 14px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
   height: 12px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
 }
 
-.home::after {
+.breadcrumbs-item:not(:last-of-type)::after {
   content: "";
   position: absolute;
-  background: url(../img/icon-right-small.svg) no-repeat;
-  left: 15px;
-  top: 5px;
-  width: 14px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
   height: 12px;
+  background-image: url("../img/icon-right-small.svg");
 }
 
-.breadcrumbs-cat::after {
-  content: "";
-  position: absolute;
-  background: url(../img/icon-right-small.svg) no-repeat;
-  left: 70px;
-  top: 3px;
-  width: 14px;
-  height: 12px;
-}
-
-.breadcrumbs-tools::after {
-  content: "";
-  position: absolute;
-  background: url(../img/icon-right-small.svg) no-repeat;
-  left: 100px;
-  top: 3px;
-  width: 14px;
-  height: 12px;
-}
+/* конец хлебных крошек */
 
 .sections-list li {
   width: 300px;
@@ -783,6 +776,10 @@ input[type=search]:focus+label {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 300px;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
 }
 
 .pop-services-list li {
@@ -796,7 +793,7 @@ input[type=search]:focus+label {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 33px;
 }
 
 .sections-list h3, .pop-services-list h3 {
@@ -839,7 +836,7 @@ input[type=search]:focus+label {
 }
 
 .popular-delivery {
-  background: #ffc047 url(../img/icon-5.svg)no-repeat 190px 25px;
+  background: #ffc047 url(../img/icon-5.svg)no-repeat 190px 30px;
   height: 123px;
 }
 
@@ -847,7 +844,7 @@ input[type=search]:focus+label {
 
 .catalog-main {
   margin-bottom: 66px;
-  margin-top: 21px;
+  margin-top: 24px;
 }
 
 /* формы */
@@ -924,8 +921,6 @@ input[type=search]:focus+label {
   border-bottom: 10px solid #ee3643;
 }
 
-/* я так понимаю, индикатор активности нужно как то по другому обозначать?? */
-
 .form-catalog {
   margin: 0;
   padding: 0;
@@ -974,12 +969,95 @@ input[type=search]:focus+label {
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .sourse {
   padding-top: 4px;
 }
+
+/* сортировка по производителю*/
+
+.sort-by-manufacturer {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  list-style: none;
+}
+
+.sort-by-manufacturer input[type=checkbox]+label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 35px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.sort-by-manufacturer input[type=checkbox]+label::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: -2px;
+  left: 0;
+  background: url(../img/checkbox-off.png) no-repeat;
+}
+
+.sort-by-manufacturer input[type=checkbox]+label:hover::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: -2px;
+  left: 0;
+  background: url(../img/checkbox-off-hov.png) no-repeat;
+}
+
+.sort-by-manufacturer input[type=checkbox]:checked+label::after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: -2px;
+  left: 0;
+  background: url(../img/checkbox-on.png) no-repeat;
+}
+
+.sort-by-manufacturer input[type=checkbox]:checked+label:hover::after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: -2px;
+  left: 0;
+  background: url(../img/checkbox-on-hov.png) no-repeat;
+}
+
+.sort-by-manufacturer input[type=checkbox]:disabled+label::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: -2px;
+  left: 0;
+  background: url(../img/checkbox-off.png) no-repeat;
+  opacity: 0.3;
+}
+
+.sort-by-manufacturer input[type=checkbox]:disabled+label {
+  opacity: 0.4;
+}
+
+/* --------------- */
 
 .manufacturer-sort, .source-sort {
   font-size: 15px;
@@ -991,50 +1069,38 @@ input[type=search]:focus+label {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  padding-left: 32px;
-}
-
-.manufacturer-sort label::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: -30px;
-  width: 23px;
-  height: 23px;
-  background: url(../img/checkbox-off.svg) no-repeat 0 0;
-}
-
-.filter-input-checkbox:checked+label::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: -30px;
-  width: 23px;
-  height: 23px;
-  background: url(../img/checkbox-on.svg) no-repeat 0 0;
+  padding-left: 35px;
 }
 
 .filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
   top: -3px;
-  left: -30px;
-  width: 25px;
-  height: 25px;
-  background: url(../img/radio-on.svg) no-repeat 0 0;
+  left: -35px;
+  width: 27px;
+  height: 27px;
+  background: url(../img/radio-on.svg) no-repeat;
+}
+
+.filter-input-radio:checked:hover+label::after {
+  background: url(../img/radio-on-hov.png) no-repeat;
 }
 
 .filter-input-radio+label::after {
   content: "";
   position: absolute;
   top: -3px;
-  left: -30px;
-  width: 25px;
-  height: 25px;
-  background: url(../img/radio-off.svg) no-repeat 0 0;
+  left: -35px;
+  width: 27px;
+  height: 27px;
+  background: url(../img/radio-off.svg) no-repeat;
 }
 
-.manufacturer-sort label, .source-sort label {
+.filter-input-radio:hover+label::after {
+  background: url(../img/radio-off-hov.png) no-repeat;
+}
+
+.source-sort label {
   position: relative;
   display: block;
   cursor: pointer;
@@ -1042,11 +1108,8 @@ input[type=search]:focus+label {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.filter-input:disabled+label {
-  color: #000000;
-  opacity: 0.5;
+  top: -2px;
+  left: 0;
 }
 
 .manufacturer-sort li, .source-sort li {
@@ -1065,7 +1128,7 @@ input[type=search]:focus+label {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
-  margin-top: 55px;
+  margin-top: 51px;
 }
 
 /* ------------фильтр range из демки------------  */
@@ -1127,6 +1190,7 @@ input[type=search]:focus+label {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 17px;
   text-transform: uppercase;
@@ -1134,7 +1198,7 @@ input[type=search]:focus+label {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 15px;
+  padding: 8px 15px 8px 20px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   text-align: center;
@@ -1160,14 +1224,14 @@ input[type=search]:focus+label {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   list-style: none;
   color: #ffffff;
 }
 
-.slider input[type="radio"] {
+/* .slider input[type="radio"] {
   display: none;
-}
+} */
 
 .slider-controls label {
   position: relative;
@@ -1276,10 +1340,6 @@ input[type=search]:focus+label {
   width: 195px;
 }
 
-.popular-supliers {
-  margin-top: 5px;
-}
-
 .popular-items-head-wrapper, .popular-supliers-head-wrapper {
   background-color: #f9f5f0;
   display: -webkit-box;
@@ -1290,23 +1350,37 @@ input[type=search]:focus+label {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .popular-items-head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .popular-items-head, .popular-supliers-head, .catalog-header {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
   padding-top: 27px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 28px;
   margin: 0;
+}
+
+.popular-supliers {
+  margin-top: 2px;
+}
+
+.popular-items-head, .popular-supliers-head {
+  padding-top: 30px;
+  max-width: 600px;
 }
 
 .catalog-header {
@@ -1315,9 +1389,9 @@ input[type=search]:focus+label {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  padding-top: 27px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+  padding-left: 28px;
 }
 
 /*----------- карточка товара ------------*/
@@ -1352,6 +1426,7 @@ input[type=search]:focus+label {
 .item-card p {
   margin: 0;
   padding: 0;
+  line-height: 0;
 }
 
 .item-header {
@@ -1362,6 +1437,7 @@ input[type=search]:focus+label {
   padding: 0;
   padding: 0 25px;
   margin-bottom: 15px;
+  margin-top: 8.4px;
 }
 
 .item-header a {
@@ -1373,9 +1449,10 @@ input[type=search]:focus+label {
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
+  margin: 0;
+  padding: 0;
   min-height: 20px;
   margin-top: 15px;
-  margin-bottom: 5px;
 }
 
 .current-price {
@@ -1488,12 +1565,13 @@ input[type=search]:focus+label {
 .item-card .current-price {
   position: relative;
   width: 80px;
-  margin: 5px auto;
+  margin: 5px 39px 20px 42px;
   margin-bottom: 20px;
   padding: 10px 30px;
   color: white;
   background: #ee3643;
   border-radius: 3px;
+  line-height: 18px;
 }
 
 .item-card .current-price:after {
@@ -1503,7 +1581,7 @@ input[type=search]:focus+label {
   right: -20px;
   width: 0;
   height: 0;
-  border: 20px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
 
@@ -1628,12 +1706,22 @@ input[type=search]:focus+label {
 
 .services {
   background-color: #f4f8f9;
-  margin-top: 85px;
-  padding: 65px 0px 100px 0px;
+  margin-top: 83px;
+  padding: 65px 0px 98px 0px;
 }
 
 .services-slider-wrapper {
   position: relative;
+}
+
+.services-slider-wrapper::after {
+  content: "";
+  position: absolute;
+  background: url(../img/vertical-line.png);
+  width: 10px;
+  height: 279px;
+  top: -40px;
+  left: 230px;
 }
 
 .servises-descr {
@@ -1641,7 +1729,7 @@ input[type=search]:focus+label {
 }
 
 .services h2 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1659,7 +1747,7 @@ input[type=search]:focus+label {
 }
 
 .services h3 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -1671,15 +1759,16 @@ input[type=search]:focus+label {
   list-style: none;
 }
 
-.services-slider-wrapper input[type="radio"] {
+/* .services-slider-wrapper input[type="radio"] {
+  opacity: 0;
   display: none;
-}
+} */
 
 .services-slider-wrapper label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -1707,10 +1796,11 @@ input[type=search]:focus+label {
 .services-slider-list p, .services-slider-list h3 {
   margin: 0;
   padding: 0;
+  max-width: 380px;
 }
 
 .services-slider-list h3 {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .services-slider-list {
@@ -1751,7 +1841,7 @@ input[type=search]:focus+label {
 }
 
 .about h3 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1779,7 +1869,7 @@ input[type=search]:focus+label {
 }
 
 .delivery-comp a {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -1788,7 +1878,7 @@ input[type=search]:focus+label {
 
 .delivery-comp li {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding-left: 35px;
 }
 
@@ -1815,7 +1905,7 @@ input[type=search]:focus+label {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 45px;
-  padding: 30px 0 85px 0;
+  padding: 33px 0 85px 0;
 }
 
 /* текст про перфораторы внизу страницы каталога */
@@ -1826,11 +1916,11 @@ input[type=search]:focus+label {
 
 .drils-about-wrapper {
   padding-top: 65px;
-  padding-bottom: 70px;
+  padding-bottom: 69.5px;
 }
 
 .drils-about h3 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -1857,7 +1947,7 @@ input[type=search]:focus+label {
 }
 
 .contacts h2 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1880,7 +1970,7 @@ input[type=search]:focus+label {
 /* ----------footer ----------- */
 
 .footer {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
   background-color: #32425c;
 }
@@ -1899,6 +1989,10 @@ input[type=search]:focus+label {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.footer-adress-wrapper a {
+  padding-left: 5px;
 }
 
 .logo-footer-nav-wrapper {
@@ -1924,7 +2018,7 @@ input[type=search]:focus+label {
 }
 
 .footer-adress, .footer-phone {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1946,7 +2040,7 @@ input[type=search]:focus+label {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 39px;
+  margin-top: 37px;
 }
 
 .footer-adress {
@@ -1954,7 +2048,7 @@ input[type=search]:focus+label {
 }
 
 .footer-nav-list a {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1962,7 +2056,7 @@ input[type=search]:focus+label {
 }
 
 .footer-catalog {
-  width: 531px;
+  width: 525px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1978,7 +2072,7 @@ input[type=search]:focus+label {
 }
 
 .footer-catalog a {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -2373,8 +2467,7 @@ input[type=search]:focus+label {
 .modal-show {
   z-index: 101;
   display: block;
-  -webkit-animation: bounce 0.7s;
-  animation: bounce 0.7s;
+  animation: bounce 0.6s;
 }
 
 .map-show {
@@ -2408,4 +2501,35 @@ input[type=search]:focus+label {
 
 .content-show {
   display: block;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }

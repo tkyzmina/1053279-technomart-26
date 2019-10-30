@@ -10,14 +10,14 @@
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize-min.css">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="inner">
   <header class="header">
     <div class="top-line-wrapper">
       <div class="top-menu-wrapper container">
-        <a href="index.html"><img src="img/mainLogo.svg" alt="Логотип Техномарт" width="109" height="19"
+        <a href="index.html"><img src="img/main-logo.svg" alt="Логотип Техномарт" width="109" height="19"
             class="main-logo">
         </a>
         <div class="search-topline-wrapper">
@@ -37,10 +37,10 @@
       <div class="container">
         <div class="middle-nav-wrapper">
           <div class="tag">
-            <h1 class="main-desc">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+            <h1 class="main-desc">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
           </div>
           <div class="nav-contacts-wrapper">
-            <a href="tel:+78125550555" class="phonenumber">+7 (812) 555-05-55</a>
+            <a href="tel:+78125550555" class="phone-number">+7 (812) 555-05-55</a>
             <p class="nav-addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="lk-personal-wrapper">
@@ -69,10 +69,16 @@
   <main>
     <div class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html" aria-label="На главную" class="home"></a></li>
-        <li><a href="#" class="breadcrumbs-cat">Каталог</a></li>
-        <li><a href="#" class="breadcrumbs-tools">Инструмент</a></li>
-        <li><a class="breadcrumbs-perf">Перфораторы</a></li>
+        <li class="breadcrumbs-item">
+          <a href="index.html"><span class="visually-hidden ">Главная</span></a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Инструмент</a>
+        </li>
+        <li class="breadcrumbs-item">Перфораторы</li>
       </ul>
       <h2 class="catalog-header">Перфораторы</h2>
       <div class="side-sort-cards-wrapper">
@@ -86,8 +92,8 @@
               <li><a>По функционалу</a></li>
             </ul>
             <div class="sort-top-down">
-              <a href="#" class="top"></a>
-              <a href="#" class="bottom"></a>
+              <a href="#" class="top" aria-label="сортировка по убывнию"></a>
+              <a href="#" class="bottom" aria-label="сортировка по возрастанию"></a>
             </div>
           </section>
         </div>
@@ -106,6 +112,7 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                  <span>-</span>
                   <label class="max-price"><input name="max-price" type="text" value="30000"></label>
                 </div>
               </div>
@@ -114,32 +121,17 @@
             <fieldset class="side-sort middle">
               <div class="middle-sort">
                 <h3 class="form-header">Производители:</h3>
-                <ul class="manufacturer-sort">
-                  <li>
-                    <input type="checkbox" name="bosch" id="bosch" checked
-                      class="visually-hidden filter-input-checkbox filter-input">
-                    <label for="bosch">Bosch</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="interskol" id="interskol"
-                      class="visually-hidden filter-input-checkbox filter-input">
-                    <label for="interskol">Интерскол</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="makita" id="makita" checked
-                      class="visually-hidden filter-input-checkbox filter-input">
-                    <label for="makita">Makita</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="dewalt" id="dewalt"
-                      class="visually-hidden filter-input-checkbox filter-input">
-                    <label for="dewalt">Dewalt</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="hitachi" id="hitachi"
-                      class="visually-hidden filter-input-checkbox filter-input">
-                    <label for="hitachi">Hitachi</label>
-                  </li>
+                <ul class="sort-by-manufacturer">
+                  <li><input type="checkbox" name="bosch" id="bosch" checked class="visually-hidden">
+                    <label for="bosch">Bosch</label></li>
+                  <li><input type="checkbox" name="interskol" id="interskol" class="visually-hidden">
+                    <label for="interskol">Интерскол</label></li>
+                  <li><input type="checkbox" name="makita" id="makita" checked class="visually-hidden">
+                    <label for="makita">Makita</label></li>
+                  <li><input type="checkbox" name="dewalt" id="dewalt" class="visually-hidden">
+                    <label for="dewalt">Dewalt</label></li>
+                  <li><input type="checkbox" name="hitachi" id="hitachi" class="visually-hidden">
+                    <label for="hitachi">Hitachi</label></li>
                 </ul>
               </div>
             </fieldset>
@@ -358,7 +350,7 @@
   <footer class="footer">
     <section class="container footer-top">
       <div class="logo-footer-nav-wrapper">
-        <a href="index.html"><img src="img/mainLogo.svg" alt="Логотип Техномарт" width="138" height="23"
+        <a href="index.html"><img src="img/main-logo.svg" alt="Логотип Техномарт" width="138" height="23"
             class="main-logo-footer"></a>
         <nav>
           <ul class="footer-nav-list">
@@ -373,7 +365,7 @@
       <div class="adress-catalog-wrapper">
         <div class="footer-adress-wrapper">
           <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-          <a href="tel:+78125550555" class="footer-phone">+7(812)555-05-55</a>
+          <a href="tel:+78125550555" class="footer-phone">+7(812) 555-05-55</a>
         </div>
         <ul class="footer-catalog">
           <li><a href="#">Материалы</a></li>
@@ -413,7 +405,7 @@
     </section>
   </footer>
   <div class="modal-overlay" id="modal-overlay"></div>
-  <script src="js/modal-min.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
