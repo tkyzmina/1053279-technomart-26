@@ -2396,7 +2396,7 @@ input[type=search]:focus+label {
 }
 
 .make-order-modal h2 {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
